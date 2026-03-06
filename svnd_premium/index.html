@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SVND Technologies Pvt. Ltd. — Premium project development & training for B.Tech, M.Tech students. Bridging academia and industry." />
+  <title>SVND Technologies Pvt. Ltd. — Where Innovation Meets Excellence</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%2300c3ff'/><stop offset='1' stop-color='%230055ff'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='url(%23g)'/><text y='.88em' font-size='68' x='14' fill='%23000' font-family='Georgia' font-weight='900'>S</text></svg>" />
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- PARTICLES -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-pill">
+      <a href="#home" class="logo">
+        <div class="logo-mark">SV</div>
+        <div class="logo-info">
+          <span class="logo-name">SVND Technologies</span>
+          <span class="logo-tagline">Private Limited</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home"     class="active">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-electric">Get Started →</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav-mobile-overlay" id="mobileNav">
+    <button class="mobile-close" id="mobileClose">✕</button>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-grid-lines"></div>
+
+    <div class="container">
+      <div class="hero-inner">
+
+        <!-- Left: Content -->
+        <div>
+          <div class="hero-badge">
+            <div class="badge-dot"></div>
+            India's Premier Academic Tech Partner
+          </div>
+
+          <h1 class="hero-title">
+            <span class="line"><span>Where</span></span>
+            <span class="line"><span class="highlight">Knowledge</span></span>
+            <span class="line"><span>Meets <span class="gold-word"><span id="typewriter">Excellence</span></span></span></span>
+          </h1>
+
+          <p class="hero-desc">
+            SVND Technologies empowers B.Tech &amp; M.Tech students with cutting-edge
+            project development, hands-on training programs, and real-world internship
+            experiences — transforming academic potential into industry-ready brilliance.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#services" class="btn btn-electric">Explore Services →</a>
+            <a href="#contact"  class="btn btn-ghost">Talk to an Expert</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-value c-electric counter" data-target="500" data-suffix="+">0+</span>
+              <span class="stat-label">Projects Delivered</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value c-gold counter" data-target="200" data-suffix="+">0+</span>
+              <span class="stat-label">Students Trained</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value counter" data-target="98" data-suffix="%">0%</span>
+              <span class="stat-label">Satisfaction Rate</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: 3D Card -->
+        <div class="hero-visual">
+          <div class="hero-card-3d">
+            <!-- Floating badges -->
+            <div class="float-badge float-badge-1">
+              <span class="fb-icon">🏆</span>
+              <div class="fb-text">
+                <span class="fb-val">Top Rated</span>
+                <span class="fb-sub">Academic Partner</span>
+              </div>
+            </div>
+            <div class="float-badge float-badge-2">
+              <span class="fb-icon">⚡</span>
+              <div class="fb-text">
+                <span class="fb-val">Fast Delivery</span>
+                <span class="fb-sub">On-time, every time</span>
+              </div>
+            </div>
+
+            <div class="hero-card-main">
+              <div class="hc-label">Our Core Services</div>
+              <div class="hc-services">
+                <div class="hc-service">
+                  <div class="hc-service-icon">🎓</div>
+                  <div class="hc-service-name">Training</div>
+                  <div class="hc-service-sub">Industry-focused</div>
+                </div>
+                <div class="hc-service">
+                  <div class="hc-service-icon">⚙️</div>
+                  <div class="hc-service-name">B.Tech Projects</div>
+                  <div class="hc-service-sub">Final year ready</div>
+                </div>
+                <div class="hc-service">
+                  <div class="hc-service-icon">🔬</div>
+                  <div class="hc-service-name">M.Tech Projects</div>
+                  <div class="hc-service-sub">Research-grade</div>
+                </div>
+                <div class="hc-service">
+                  <div class="hc-service-icon">🚀</div>
+                  <div class="hc-service-name">Internships</div>
+                  <div class="hc-service-sub">Live projects</div>
+                </div>
+              </div>
+              <div class="hc-bottom">
+                <div class="hc-rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="hc-rating-text">4.9 / 5.0 rating</span>
+                </div>
+                <div class="hc-tag">✓ Verified</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       MARQUEE
+  ════════════════════════════════════════ -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <!-- duplicated for seamless loop -->
+      <span class="marquee-item"><span>✦</span> B.Tech Projects</span>
+      <span class="marquee-item"><span>✦</span> M.Tech Projects</span>
+      <span class="marquee-item"><span>✦</span> AI &amp; Machine Learning</span>
+      <span class="marquee-item"><span>✦</span> IoT Solutions</span>
+      <span class="marquee-item"><span>✦</span> Web Development</span>
+      <span class="marquee-item"><span>✦</span> Internship Programs</span>
+      <span class="marquee-item"><span>✦</span> Embedded Systems</span>
+      <span class="marquee-item"><span>✦</span> Cloud Computing</span>
+      <span class="marquee-item"><span>✦</span> Data Science</span>
+      <span class="marquee-item"><span>✦</span> Cybersecurity</span>
+      <!-- duplicate -->
+      <span class="marquee-item"><span>✦</span> B.Tech Projects</span>
+      <span class="marquee-item"><span>✦</span> M.Tech Projects</span>
+      <span class="marquee-item"><span>✦</span> AI &amp; Machine Learning</span>
+      <span class="marquee-item"><span>✦</span> IoT Solutions</span>
+      <span class="marquee-item"><span>✦</span> Web Development</span>
+      <span class="marquee-item"><span>✦</span> Internship Programs</span>
+      <span class="marquee-item"><span>✦</span> Embedded Systems</span>
+      <span class="marquee-item"><span>✦</span> Cloud Computing</span>
+      <span class="marquee-item"><span>✦</span> Data Science</span>
+      <span class="marquee-item"><span>✦</span> Cybersecurity</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       SERVICES
+  ════════════════════════════════════════ -->
+  <section class="services" id="services">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="label">What We Offer</span>
+        <h2>Our <span class="electric">Premium</span> Services</h2>
+        <p>From concept to completion — we deliver innovative, plagiarism-free academic projects and industry-aligned training tailored to every student's unique needs.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="svc-card reveal d1">
+          <div class="svc-card-orb"></div>
+          <div class="svc-number">01</div>
+          <div class="svc-icon-wrap">🎓</div>
+          <h3>Training Programs</h3>
+          <p>Hands-on, industry-focused training sessions designed and delivered by working professionals. Master the skills that top companies actually hire for — from AI/ML to full-stack development, embedded systems, and beyond.</p>
+          <div class="svc-tags">
+            <span class="svc-tag">Python &amp; AI</span>
+            <span class="svc-tag">Web Dev</span>
+            <span class="svc-tag">IoT</span>
+            <span class="svc-tag">Cloud</span>
+            <span class="svc-tag">Embedded</span>
+          </div>
+          <span class="svc-arrow">Enroll Now →</span>
+        </div>
+
+        <div class="svc-card reveal d2">
+          <div class="svc-card-orb"></div>
+          <div class="svc-number">02</div>
+          <div class="svc-icon-wrap">⚙️</div>
+          <h3>B.Tech Projects</h3>
+          <p>Complete final-year project development — from ideation to implementation. We deliver original, plagiarism-free projects with full source code, circuit diagrams, detailed documentation, and presentation support.</p>
+          <div class="svc-tags">
+            <span class="svc-tag">ECE / EEE</span>
+            <span class="svc-tag">CSE / IT</span>
+            <span class="svc-tag">MECH</span>
+            <span class="svc-tag">CIVIL</span>
+            <span class="svc-tag">All Branches</span>
+          </div>
+          <span class="svc-arrow">Get Started →</span>
+        </div>
+
+        <div class="svc-card reveal d3">
+          <div class="svc-card-orb"></div>
+          <div class="svc-number">03</div>
+          <div class="svc-icon-wrap">🔬</div>
+          <h3>M.Tech Projects</h3>
+          <p>Advanced, research-grade project development tailored for M.Tech requirements. We support paper writing, simulation, prototype development, and conference/journal publication assistance for your academic journey.</p>
+          <div class="svc-tags">
+            <span class="svc-tag">IEEE Standard</span>
+            <span class="svc-tag">Research Papers</span>
+            <span class="svc-tag">Simulation</span>
+            <span class="svc-tag">Prototypes</span>
+          </div>
+          <span class="svc-arrow">Learn More →</span>
+        </div>
+
+        <div class="svc-card reveal d4">
+          <div class="svc-card-orb"></div>
+          <div class="svc-number">04</div>
+          <div class="svc-icon-wrap">🚀</div>
+          <h3>Internship Programs</h3>
+          <p>Real-world internship experiences on live industry projects. Build a powerful portfolio, gain certified experience, and develop the professional skills that make your resume stand out from day one.</p>
+          <div class="svc-tags">
+            <span class="svc-tag">Live Projects</span>
+            <span class="svc-tag">Certificate</span>
+            <span class="svc-tag">Mentorship</span>
+            <span class="svc-tag">Portfolio</span>
+          </div>
+          <span class="svc-arrow">Apply Now →</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ABOUT
+  ════════════════════════════════════════ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Left panel -->
+        <div class="reveal-left">
+          <div class="about-panel">
+            <div class="about-panel-main">
+              <p class="about-mission">
+                "Dedicated to empowering students, researchers, and professionals by
+                <em>bridging the gap</em> between academic knowledge and industry requirements."
+              </p>
+              <div class="about-metrics">
+                <div class="metric">
+                  <span class="metric-val counter" data-target="500" data-suffix="+">0+</span>
+                  <span class="metric-label">Projects Done</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-val counter" data-target="200" data-suffix="+">0+</span>
+                  <span class="metric-label">Students</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-val counter" data-target="10" data-suffix="+">0+</span>
+                  <span class="metric-label">Tech Domains</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-val counter" data-target="5" data-suffix="+">0+</span>
+                  <span class="metric-label">Years Active</span>
+                </div>
+              </div>
+              <div class="about-panel-accent"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Text -->
+        <div class="reveal-right">
+          <span class="label">Who We Are</span>
+          <h2 style="margin: 1rem 0 1.5rem;">About <span class="electric">SVND</span><br><span class="gold-text" style="font-style:italic;">Technologies</span></h2>
+          <p>
+            Established with a vision to foster innovation and creativity, SVND Technologies
+            specializes in providing cutting-edge project development and training solutions
+            tailored to the unique needs of students pursuing B.Tech, M.Tech, and other
+            academic programs across India.
+          </p>
+          <p>
+            Our mission is to help students unlock their full potential by delivering
+            high-quality, practical, and result-oriented services. By combining deep technical
+            expertise with personalized guidance, we create an environment where innovation
+            thrives and every academic goal is achievable.
+          </p>
+
+          <div class="vision-mission">
+            <div class="vm-card">
+              <span class="vm-icon">🔭</span>
+              <div>
+                <h4>Our Vision</h4>
+                <p>To be a global leader in academic project development and training, inspiring a new generation of innovators and problem-solvers from every corner of the world.</p>
+              </div>
+            </div>
+            <div class="vm-card">
+              <span class="vm-icon">🎯</span>
+              <div>
+                <h4>Our Mission</h4>
+                <p>To provide students with unparalleled technical support and training, enabling them to achieve academic excellence and gain a competitive edge in their careers.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="core-values">
+            <h4>Core Values</h4>
+            <div class="values-row">
+              <span class="value-pill">🏆 Excellence</span>
+              <span class="value-pill">💡 Innovation</span>
+              <span class="value-pill">🤝 Integrity</span>
+              <span class="value-pill">🌱 Growth</span>
+              <span class="value-pill">🔐 Trust</span>
+              <span class="value-pill">⚡ Impact</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       WHY CHOOSE US
+  ════════════════════════════════════════ -->
+  <section class="why" id="why">
+    <div class="container">
+      <div class="why-inner">
+
+        <div class="reveal-left">
+          <span class="label">Why SVND</span>
+          <h2 style="margin: 1rem 0 1.5rem;">Why <span class="electric">Choose</span> Us?</h2>
+          <p>
+            We don't just build projects — we build competence. Every student receives
+            personalized mentoring from industry professionals, ensuring your project isn't
+            just submitted, but understood and owned by you.
+          </p>
+
+          <ul class="features">
+            <li class="feature">
+              <div class="feature-icon">🧠</div>
+              <span class="feature-text">Expert mentors with active industry experience</span>
+            </li>
+            <li class="feature">
+              <div class="feature-icon">✅</div>
+              <span class="feature-text">100% original, plagiarism-free project work</span>
+            </li>
+            <li class="feature">
+              <div class="feature-icon">⏱️</div>
+              <span class="feature-text">On-time delivery — never miss a submission deadline</span>
+            </li>
+            <li class="feature">
+              <div class="feature-icon">🎯</div>
+              <span class="feature-text">Personalized 1-on-1 guidance throughout</span>
+            </li>
+            <li class="feature">
+              <div class="feature-icon">🔧</div>
+              <span class="feature-text">Latest tech stacks: AI, IoT, Web, Cloud & more</span>
+            </li>
+            <li class="feature">
+              <div class="feature-icon">💬</div>
+              <span class="feature-text">Post-delivery support and explanation sessions</span>
+            </li>
+          </ul>
+
+          <a href="#contact" class="btn btn-gold">Start Your Journey →</a>
+        </div>
+
+        <div class="why-cards reveal-right">
+          <div class="why-card">
+            <div class="wc-icon">🧠</div>
+            <h4>Expert Mentors</h4>
+            <p>Industry professionals who guide your project from concept to completion.</p>
+          </div>
+          <div class="why-card">
+            <div class="wc-icon">⚡</div>
+            <h4>Lightning Fast</h4>
+            <p>Rapid execution without compromising quality or originality.</p>
+          </div>
+          <div class="why-card">
+            <div class="wc-icon">🔐</div>
+            <h4>100% Confidential</h4>
+            <p>Your project ideas and data are completely secure with us.</p>
+          </div>
+          <div class="why-card">
+            <div class="wc-icon">🌐</div>
+            <h4>All Domains</h4>
+            <p>AI/ML, IoT, Embedded, Web, Cloud, VLSI, Power Systems & more.</p>
+          </div>
+          <div class="why-card">
+            <div class="wc-icon">📜</div>
+            <h4>Certified</h4>
+            <p>Internship certificates recognised by top recruiters.</p>
+          </div>
+          <div class="why-card">
+            <div class="wc-icon">🤝</div>
+            <h4>After Support</h4>
+            <p>We stand by you even after delivery — viva prep included.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CONTACT
+  ════════════════════════════════════════ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left -->
+        <div class="reveal-left">
+          <span class="label">Reach Us</span>
+          <h2 style="margin: 1rem 0 1.5rem;">Let's <span class="electric">Build</span><br>Something <span class="gold-text" style="font-style:italic;">Great</span></h2>
+          <p>
+            Have a project idea or want to enroll in our training programs?
+            Our team is ready to help. Reach out and we'll get back to you
+            within a few hours.
+          </p>
+
+          <div class="contact-items">
+            <div class="ci">
+              <div class="ci-icon">📍</div>
+              <div>
+                <span class="ci-label">Office Address</span>
+                <span class="ci-value">SVND Technologies Pvt. Ltd., India</span>
+              </div>
+            </div>
+            <div class="ci">
+              <div class="ci-icon">📞</div>
+              <div>
+                <span class="ci-label">Phone / WhatsApp</span>
+                <span class="ci-value"><a href="tel:+919398014807">+91 - 9398014807</a></span>
+              </div>
+            </div>
+            <div class="ci">
+              <div class="ci-icon">✉️</div>
+              <div>
+                <span class="ci-label">Email Us</span>
+                <span class="ci-value"><a href="mailto:info@svndtechnologies.com">info@svndtechnologies.com</a></span>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/919398014807" target="_blank" rel="noopener" class="whatsapp-cta">
+            <span class="wa-icon">💬</span>
+            Chat on WhatsApp Now
+          </a>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="reveal-right">
+          <div class="form-card">
+            <h3>Send a Message</h3>
+
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="fg">
+                  <label for="fname">Full Name</label>
+                  <input type="text" id="fname" placeholder="Your full name" required />
+                </div>
+                <div class="fg">
+                  <label for="fphone">Phone Number</label>
+                  <input type="tel" id="fphone" placeholder="+91 XXXXX XXXXX" />
+                </div>
+              </div>
+              <div class="fg">
+                <label for="femail">Email Address</label>
+                <input type="email" id="femail" placeholder="you@example.com" required />
+              </div>
+              <div class="fg">
+                <label for="fservice">Service Interested In</label>
+                <select id="fservice">
+                  <option value="">Select a service…</option>
+                  <option value="btech">B.Tech Projects</option>
+                  <option value="mtech">M.Tech Projects</option>
+                  <option value="training">Training Programs</option>
+                  <option value="internship">Internship Program</option>
+                </select>
+              </div>
+              <div class="fg">
+                <label for="fmessage">Your Message</label>
+                <textarea id="fmessage" placeholder="Tell us about your project, topic, or requirement…"></textarea>
+              </div>
+              <button type="submit" class="btn btn-electric form-btn">Send Message →</button>
+            </form>
+
+            <div id="formSuccess" class="form-success">
+              <div class="success-anim">✅</div>
+              <h4>Message Sent!</h4>
+              <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+
+        <div class="ft-brand">
+          <a href="#home" class="logo">
+            <div class="logo-mark">SV</div>
+            <div class="logo-info">
+              <span class="logo-name">SVND Technologies</span>
+              <span class="logo-tagline">Private Limited</span>
+            </div>
+          </a>
+          <p>Empowering students and professionals by bridging academic knowledge with real industry requirements since our founding.</p>
+          <div class="ft-socials">
+            <a href="#" class="ft-social" title="LinkedIn">in</a>
+            <a href="#" class="ft-social" title="Twitter / X">𝕏</a>
+            <a href="https://wa.me/919398014807" class="ft-social" target="_blank" title="WhatsApp">💬</a>
+            <a href="mailto:info@svndtechnologies.com" class="ft-social" title="Email">✉</a>
+            <a href="#" class="ft-social" title="YouTube">▶</a>
+          </div>
+        </div>
+
+        <div class="ft-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="ft-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#services">B.Tech Projects</a></li>
+            <li><a href="#services">M.Tech Projects</a></li>
+            <li><a href="#services">Training Programs</a></li>
+            <li><a href="#services">Internships</a></li>
+          </ul>
+        </div>
+
+        <div class="ft-col">
+          <h5>Contact Info</h5>
+          <div class="ft-contact-list">
+            <div class="ft-ci">
+              <span class="ft-ci-icon">📞</span>
+              <span class="ft-ci-text"><a href="tel:+919398014807">+91-9398014807</a></span>
+            </div>
+            <div class="ft-ci">
+              <span class="ft-ci-icon">✉️</span>
+              <span class="ft-ci-text"><a href="mailto:info@svndtechnologies.com">info@svndtechnologies.com</a></span>
+            </div>
+            <div class="ft-ci">
+              <span class="ft-ci-icon">📍</span>
+              <span class="ft-ci-text">India</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2024 <a href="#">SVND Technologies Pvt. Ltd.</a> All Rights Reserved.</span>
+        <div class="footer-brand-small">
+          <div class="fbs-dot"></div>
+          <span>Designed for academic excellence</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCROLL TO TOP -->
+  <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
